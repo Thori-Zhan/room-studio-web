@@ -59,5 +59,11 @@ body.canvas-focus main{display:block;height:auto}
 body.canvas-focus .panel{display:none}
 body.canvas-focus .workspace{overflow:visible}
 body.canvas-focus #stage{height:calc(100vh - 250px);min-height:520px;flex:none}
+.bed-frame-controls{border:1px solid #cdbfa7;background:#f5f0e6;border-radius:9px;margin:0 0 20px;padding:14px;min-width:0}
+.bed-frame-controls legend{font-size:var(--panel-font);padding:0 5px;color:#6b593e}
+.bed-frame-toggle{display:flex;align-items:center;gap:9px;font-size:var(--panel-font);line-height:1.6;cursor:pointer}
+.bed-frame-toggle input{width:19px;height:19px;accent-color:var(--green);flex-shrink:0}
+.bed-frame-controls .fields{margin-top:12px}
+.bed-frame-controls .fine:last-child{margin-bottom:0}
 
 .photo-empty{height:68px;min-height:68px;display:grid;place-items:center;background:#e9ede3;color:#8b9b83;border:1px dashed #c7d2be!important;font-size:10px}.local-photo-picker{display:block;margin-top:9px;text-align:center;border:1px solid #d3dccb;padding:9px;border-radius:7px;font-size:11px;cursor:pointer}.local-photo-picker input{display:none}
