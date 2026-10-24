@@ -1,0 +1,87 @@
+[
+  {
+    "name": "LENNART",
+    "id": "10326178",
+    "file": "lennart.glb",
+    "modelBoundsCm": {
+      "width": 30.49,
+      "depth": 34.5,
+      "height": 56
+    },
+    "dimensionsCm": [
+      30,
+      34,
+      56
+    ],
+    "credit": "IKEA product visualization model"
+  },
+  {
+    "name": "LOBERGET-MALSKAR",
+    "id": "09488572",
+    "file": "loberget-malskar.glb",
+    "modelBoundsCm": {
+      "width": 67.33,
+      "depth": 64.13,
+      "height": 77.81
+    },
+    "dimensionsCm": [
+      67,
+      67,
+      90
+    ],
+    "previewNote": "Model is at a lower adjustable seat setting: about 77.8 cm high. Reserved 67 x 67 cm footprint is unchanged.",
+    "credit": "IKEA product visualization model"
+  },
+  {
+    "name": "TROTTEN-candidate",
+    "id": "79429579",
+    "file": "trotten-candidate.glb",
+    "modelBoundsCm": {
+      "width": 120,
+      "depth": 74.6,
+      "height": 118.14
+    },
+    "dimensionsCm": [
+      120,
+      70,
+      null
+    ],
+    "identity": "candidate; exact desk series not confirmed",
+    "previewNote": "120 cm desktop; model is raised to about 118 cm, feet extend to about 74.6 cm depth. Preview height is adjusted; exact desk series remains unconfirmed.",
+    "credit": "IKEA product visualization model"
+  },
+  {
+    "name": "JONAXEL-wire-baskets",
+    "id": "29599767",
+    "file": "jonaxel-wire-baskets.glb",
+    "modelBoundsCm": {
+      "width": 49.67,
+      "depth": 51.55,
+      "height": 70.34
+    },
+    "dimensionsCm": [
+      50,
+      51,
+      70
+    ],
+    "identity": "wire basket combination; compare against room photo",
+    "credit": "IKEA product visualization model"
+  },
+  {
+    "name": "JONAXEL-mesh-baskets",
+    "id": "49599813",
+    "file": "jonaxel-mesh-baskets.glb",
+    "modelBoundsCm": {
+      "width": 49.38,
+      "depth": 51.31,
+      "height": 70.3
+    },
+    "dimensionsCm": [
+      50,
+      51,
+      70
+    ],
+    "identity": "mesh basket alternative; compare against room photo",
+    "credit": "IKEA product visualization model"
+  }
+]
