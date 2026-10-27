@@ -24,6 +24,7 @@
  }
  function analyze(input,geometryMessages=[]){const s=normalize(input),d=s.design,issues=geometryMessages.map(text=>({kind:'layout',text})),warnings=[],routes=[];
   if(!fixedValid(s))issues.push({kind:'fixed',text:'床、书桌或壁炉的固定尺寸不符。'});
+  for(const i of s.items)if(i.h+(i.type==='bed'&&i.frame?.enabled?i.frame.h:0)>s.room.h)issues.push({kind:'height',text:i.name+' 高度超过当前层高。'});
   const missing=d.outlets.filter(o=>o.offset===null);if(missing.length)issues.push({kind:'outlets',text:missing.length+' 处插座尚未定位，请填写沿墙距离。'});
   for(const o of d.outlets){if(o.offset!==null&&(o.offset<0||o.offset>span(o,s.room)))issues.push({kind:'outlets',text:o.name+' 超出可用墙段。'});if(o.height!==null&&(o.height<0||o.height>s.room.h))issues.push({kind:'outlets',text:o.name+' 离地高度超出层高。'});}
   for(const b of d.boards)if(b.offset<0||b.offset+b.w>span(b,s.room)||b.bottom<0||b.bottom+b.h>s.room.h)issues.push({kind:'board',text:b.name+' 超出墙面范围。'});
